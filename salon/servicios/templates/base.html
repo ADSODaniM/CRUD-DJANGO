@@ -24,9 +24,14 @@
             <li><a href="#">Contacto</a></li>
             <li><a href="#">Login</a></li>
         </ul>
-        <div class="search-bar">
-            <input type="text" placeholder="Buscar">
-        </div>
+        <form method="GET">
+            <select name="tipo_servicio">
+                <option value="">Todos</option>
+                <option value="manicura">Manicura</option>
+                <option value="pedicura">Pedicura</option>
+            </select>
+            <input type="submit" value="Buscar">
+        </form>
     </nav>
     <main>
         {% block content %}
